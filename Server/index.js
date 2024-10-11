@@ -22,6 +22,9 @@ const port = process.env.PORT;
 app.get('/', (req, res) => {
     res.json({ message: 'Hello, this is a GET request!' });
 });
+app.get('/user/log', (req, res) => {
+    res.json({ message: 'Hello,' });
+});
 app.use('/user',route);
 
 app.use(express.urlencoded({ extended: true }));
