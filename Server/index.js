@@ -13,9 +13,9 @@ app.use(cookieParser());
 app.use('/uploads', express.static('uploads'));
 
 const corsOptions = {
-    origin: '*', // Specify the exact origin as a string
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
-    credentials: true, // Allow credentials (e.g., cookies) to be sent
+    origin:'http://localhost:5173', 
+    methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+    credentials: true,
 };
 
 app.use(cors(corsOptions));
