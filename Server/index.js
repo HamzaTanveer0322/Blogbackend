@@ -23,7 +23,7 @@ app.use(cors(corsOptions));
 const port = process.env.PORT || 3000; // Use port 3000 as a fallback
 
 app.get('/', (req, res) => {
-    res.json({ message: 'Hello, this is a GET request!' });
+    res.json({ message: 'Hello, this is a GETs request!' });
 });
 
 app.use('/user', route);
